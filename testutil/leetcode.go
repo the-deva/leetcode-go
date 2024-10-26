@@ -10,6 +10,8 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 func parseRawArray(rawArray string) (splits []string, err error) {
@@ -408,7 +410,8 @@ func RunLeetCodeClassWithExamples(t *testing.T, constructor interface{}, rawExam
 		}
 		for i, name := range methodNames {
 			name = name[1 : len(name)-1] // 移除引号
-			name = strings.Title(name)   // 首字母大写以匹配模板方法名称
+			titleCaser := cases.Title(language.English)
+			name = titleCaser.String(name)  // 首字母大写以匹配模板方法名称
 			methodNames[i] = name
 		}
 

@@ -27,7 +27,7 @@ func flipEquiv(root1 *TreeNode, root2 *TreeNode) bool {
 
     result := flipEquiv(root1.Left, root2.Left) && flipEquiv(root1.Right, root2.Right)
 
-    if result == true {
+    if result {
         return true
     }
 
