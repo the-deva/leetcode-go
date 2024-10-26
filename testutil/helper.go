@@ -7,7 +7,7 @@ import (
 	"github.com/shirou/gopsutil/v3/process"
 )
 
-// 移除每行的左右空格
+// Remove left and right spaces from the line
 func trimSpace(s string) string {
 	lines := strings.Split(strings.TrimSpace(s), "\n")
 	for i, line := range lines {
@@ -16,7 +16,7 @@ func trimSpace(s string) string {
 	return strings.Join(lines, "")
 }
 
-// 移除多余空行和左右空格
+// Remove extra blank lines, left and right spaces from the line
 func trimSpaceAndEmptyLine(s string) (res []string) {
 	lines := strings.Split(s, "\n")
 	for _, line := range lines {

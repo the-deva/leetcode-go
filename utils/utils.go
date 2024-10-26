@@ -1,10 +1,11 @@
-package main
+package utils
 
 import (
 	"sort"
 	"strings"
 )
 
+// sort the given string
 func sortString(s string) string {
 	chars := strings.Split(s, "")
 	sort.Strings(chars)

@@ -7,7 +7,7 @@ func twoSum(nums []int, target int) []int {
 		found := target - value
 
 		if found, ok := hashMap[found]; ok {
-			return []int {found, value}
+			return []int {found, key}
 		} else {
 			hashMap[value] = key
 		}

@@ -1,12 +1,13 @@
 package main  
-// import sortString
+
+import ("github.com/the-chowdary/leetcode-go/utils")
 
 // https://leetcode.com/problems/group-anagrams/
 func groupAnagrams(strs []string) [][]string {
     hashMap := make(map[string][]string)
 
 	for _, word := range strs {
-		sortedWord := sortString(word)
+		sortedWord := utils.sortString(word)
 		hashMap[sortedWord] = append(hashMap[sortedWord], word)
 	}
 
