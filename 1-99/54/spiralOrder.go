@@ -5,7 +5,9 @@ Implemented spiralOrder : https://leetcode.com/problems/spiral-matrix/descriptio
 3. go to next direction and check out of bounds if out of bounds change direction
 4. finally update i and j
 
-Similar problem : https://leetcode.com/problems/robot-bounded-in-circle/description/
+Similar problem :
+1041 : https://leetcode.com/problems/robot-bounded-in-circle/description/
+874 : https://leetcode.com/problems/walking-robot-simulation/description/
 */
 package main
 

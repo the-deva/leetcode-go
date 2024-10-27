@@ -3,7 +3,9 @@
 1. Define directions and if instruction is 'G' then update x, y with direction
 2. If instruction is 'L' then turn counter clockwise else clockwise
 
-Similar Problem : https://leetcode.com/problems/spiral-matrix/description/
+Similar Problem :
+54 : https://leetcode.com/problems/spiral-matrix/description/
+874 : https://leetcode.com/problems/walking-robot-simulation/description/
 */
 package main
 
