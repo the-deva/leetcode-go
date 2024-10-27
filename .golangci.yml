@@ -4,7 +4,7 @@ linters:
   enable:
     - errcheck
     - goimports
-    # - revive
+    - revive
     - ineffassign
     - govet
     - unconvert
@@ -59,7 +59,7 @@ linters-settings:
       - name: context-keys-type
         disabled: false
       - name: dot-imports
-        disabled: false
+        disabled: true
       - name: empty-block
         disabled: true
       - name: error-naming
