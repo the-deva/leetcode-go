@@ -14,3 +14,21 @@ func SortString(s string) string {
 	sort.Strings(chars)
 	return strings.Join(chars, "")
 }
+
+// Max returns max values in the int array
+func Max(numbers []int) (result int) {
+	for _, num := range numbers {
+		if num > result {
+			result = num
+		}
+	}
+	return
+}
+
+// Sum returns total sum of the int array
+func Sum(numbers []int) (result int) {
+	for _, num := range numbers {
+		result += num
+	}
+	return
+}
