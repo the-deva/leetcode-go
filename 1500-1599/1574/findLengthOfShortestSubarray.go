@@ -33,5 +33,5 @@ func findLengthOfShortestSubarray(arr []int) (result int) {
 }
 
 func main() {
-	
+
 }
