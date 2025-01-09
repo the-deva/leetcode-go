@@ -30,7 +30,7 @@ jobs:
         include:
           - job_name: go1.23
             os: ubuntu-latest
-            go: '1.23.x'
+            go: '1.23.4'
             gotests: true
             integrationtest: true
             check: true
