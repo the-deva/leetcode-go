@@ -86,4 +86,6 @@ jobs:
         uses: golangci/golangci-lint-action@v6
         with:
           version: latest
+        env:
+          GO_VERSION: ${{ matrix.go }}
         if: matrix.check
