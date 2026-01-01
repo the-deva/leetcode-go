@@ -23,13 +23,14 @@ func robotSim(commands []int, obstacles [][]int) int {
 	x, y, d, result := 0, 0, 0, 0
 
 	for _, c := range commands {
-		if c == -2 {
+		switch c {
+		case -2:
 			// Turn left
 			d = (d + 3) % 4
-		} else if c == -1 {
+		case -1:
 			// Turn right
 			d = (d + 1) % 4
-		} else {
+		default:
 			i, j := DIRS[d][0], DIRS[d][1]
 			for c > 0 {
 				if _, found := obstacleSet[[2]int{x + i, y + j}]; found {

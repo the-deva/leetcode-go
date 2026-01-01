@@ -111,6 +111,7 @@ linters:
         text: 'SA1019: "github.com/rclone/rclone/cmd/serve/httplib" is deprecated'
     paths:
       - testutil/*
+      - utils/*
       - third_party$
       - builtin$
       - examples$
